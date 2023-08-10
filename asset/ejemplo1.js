@@ -51,6 +51,16 @@ while (seleccion != "no") {
         carrito.push ({producto, cantidades, precio})
     }
 
+    let productoEncontrado = productos.filter((p) => p.nombre === producto)[0];
+
+    if (productoEncontrado) {
+        let precio = productoEncontrado.precio;
+        let cantidades = parseInt(prompt(`¿Cuánta cantidad desea comprar de ${producto}?`))
+        carrito.push({producto, cantidades, precio})
+    } else {
+        alert("Producto no encontrado en el bazar.")
+    }
+
     seleccion = prompt("¿Desea seguir añadiendo productos?")
 
     while(seleccion === "no") {
