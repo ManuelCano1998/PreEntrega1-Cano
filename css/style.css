@@ -1,67 +1,219 @@
 body {
-    margin: 25px;
-    padding: 25px;
-    background-color: #292C3E;
-    border: 5px solid #f2f2f2;
-}
-
-h1{
-    text-align: center;
-    font-family: sans-serif;
-    color: #f2f2f2;
-    font-size: 5rem;
-    padding: 25px;
-    margin: 120px 50px 120px 50px;
-}
-
-span{
-    font-style: italic;
-}
-
-
-h2{
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #1C1F30;
-    color: #f2f2f2;
-    font-size: 3rem;
-    padding: 25px;
-    margin: 120px 50px 120px 50px;
-    border: 2px solid #f2f2f2;
-}
-
-p{
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #1C1F30;
-    color: #f2f2f2;
-    font-size: 2rem;
-    padding: 25px;
-    margin: 120px 50px 120px 50px;
-    border: 2px solid #f2f2f2;
-}
-
-.trabajo {
-    background-color: #1C1F30;
-    padding: 10px;
-    margin: 120px 50px 120px 50px;
-    text-align: center;
-    border: 2px solid #f2f2f2;
-}
-
-a {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
+}
+
+/* Inaliza header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: wheat;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav li {
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.icon{
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.ver-carrito {
+    list-style: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.ver-carrito:hover {
+    opacity: 0.7;
+}
+
+
+/* Finaliza header */
+
+/* Estilos principal */
+.background-image {
+    background-image: url('../img/principal.png');
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: black;
     font-size: 4rem;
-    color: #f2f2f2;
+    padding: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.trabajo:hover {
-    border: 3px solid #DFF467;
-    color: #DFF467;
+p {
+    color: black;
+    font-size: 3rem;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Finaliza estilos principal */
+
+
+/* Estilos footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-.trabajo:hover a {
-    color: #DFF467;
+footer p {
+    color: wheat;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.redes {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 5rem;
+    gap: 25px;
+}
+/* Finaliza footer */
+
+.items-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: wheat;
+}
+
+.rectang{
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 2, 0.5);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: wheat;
+}
+
+.precio {
+    color: wheat;
+}
+
+.rectang > img {
+    border-radius: 2px;
+}
+
+.rectang button {
+    color: wheat;
+    background-color: black;
+    border: 2px solid wheat;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rectang button:hover {
+    opacity: 0.7;
+}
+
+.modal-container{
+    width: 80%;
+    margin: 0% 10%;
+    max-width: 160vh;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    top: 16vh;
+}
+
+.modal-container h1{
+    color: wheat;
+}
+
+.modal-container p {
+    color: wheat;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: wheat;
+    width: 100%;
+}
+
+.modal-header-titulo {
+    justify-self: start;
+    color: wheat;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-header-button:hover {
+    opacity: 0.7;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 3rem;
+    padding: 25px;
+    text-align: center;
+    color: wheat;
 }
