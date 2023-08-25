@@ -4,7 +4,7 @@ const verCarrito = document.getElementById("verCarrito");
 
 const modalContainer = document.getElementById("modal-container")
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 productos.forEach((product)=> {
     let content = document.createElement("div");
@@ -30,11 +30,12 @@ productos.forEach((product)=> {
             nombre: product.nombre,
             precio: product.precio,
         });
+        localStorage.setItem("carrito", JSON.stringify(carrito));
     });
 });
 
 verCarrito.addEventListener("click", () => {
-    modalContainer.innerHTML = ""
+    modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header"
@@ -71,4 +72,8 @@ verCarrito.addEventListener("click", () => {
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `Total a pagar: $${total}`;
     modalContainer.append(totalBuying);
+
+    window.addEventListener("beforeunload", () => {
+        localStorage.removeItem("carrito");
+    });
 });

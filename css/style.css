@@ -31,6 +31,11 @@ nav li {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+nav li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 .logo {
     font-size: 3rem;
     padding: 20px;
@@ -50,8 +55,6 @@ nav li {
 .ver-carrito:hover {
     opacity: 0.7;
 }
-
-
 /* Finaliza header */
 
 /* Estilos principal */
@@ -99,8 +102,8 @@ footer {
 
 footer p {
     color: wheat;
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 3rem;
+    padding: 25px;
 }
 
 .redes {
@@ -108,10 +111,16 @@ footer p {
     text-decoration: none;
     list-style: none;
     font-size: 5rem;
-    gap: 25px;
+    gap: 100px;
+}
+
+.redes li:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 /* Finaliza footer */
 
+/* Inicia seccion productos */
 .items-content {
     display: flex;
     justify-content: space-around;
@@ -151,7 +160,9 @@ footer p {
 .rectang button:hover {
     opacity: 0.7;
 }
+/* Finaliza seccion productos */
 
+/* Inicia modal de carrito*/
 .modal-container{
     width: 80%;
     margin: 0% 10%;
@@ -217,3 +228,4 @@ footer p {
     text-align: center;
     color: wheat;
 }
+/* Finaliza modal de carrito */
