@@ -289,12 +289,11 @@ footer p {
 /* Inicia seccion Contacto */
 .containercontacto {
     max-width: 1000px;
-    margin: 100px auto;
-    padding: 25px;
+    margin: 150px 200px 0 200px;
+    padding: 10px;
     background-color: #696758;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    border: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .containercontacto h1 {
@@ -333,8 +332,8 @@ button {
     font-size: 2rem;
     background-color: #36393b;
     color: #eee6ab;
-    border: none;
-    border-radius: 3px;
+    border: 2px solid #eee6ab;
+    border-radius: 5px;
     cursor: pointer;
 }
 
