@@ -4,6 +4,7 @@ const productos = [
      nombre: "Taza", 
      precio: 200,
      img: "../img/tazas.png",
+     cantidad:1,
     },
 
     {
@@ -11,6 +12,7 @@ const productos = [
      nombre: "Vaso", 
      precio: 350,
      img: "../img/vasos.png",
+     cantidad:1,
     },
 
     {
@@ -18,6 +20,7 @@ const productos = [
      nombre: "Cubiertos", 
      precio: 500,
      img: "../img/cubiertos.png",
+     cantidad:1,
     },
 
     {
@@ -25,6 +28,7 @@ const productos = [
      nombre: "Platos", 
      precio: 750,
      img: "../img/platos.png",
+     cantidad:1,
     },
 
     {
@@ -32,6 +36,7 @@ const productos = [
      nombre: "Jarra", 
      precio: 950,
      img: "../img/jarra.png",
+     cantidad:1,
     },
 
     {
@@ -39,6 +44,7 @@ const productos = [
      nombre: "Canasto", 
      precio: 1200,
      img: "../img/canasto.png",
+     cantidad:1,
     },
 
     {
@@ -46,6 +52,7 @@ const productos = [
      nombre: "Rallador", 
      precio: 650,
      img: "../img/ralla.png",
+     cantidad:1,
     },
 
     {
@@ -53,6 +60,7 @@ const productos = [
      nombre: "Escurridor", 
      precio: 680,
      img: "../img/escurri.png",
+     cantidad:1,
     },
 
     {
@@ -60,6 +68,7 @@ const productos = [
      nombre: "Batidor", 
      precio: 465,
      img: "../img/batidor.png",
+     cantidad:1,
     },
 
     {
@@ -67,6 +76,7 @@ const productos = [
      nombre: "Molde", 
      precio: 880,
      img: "../img/molde.png",
+     cantidad:1,
     },
 
     {
@@ -74,6 +84,7 @@ const productos = [
      nombre: "Pisa papa", 
      precio: 275,
      img: "../img/pisa.png",
+     cantidad:1,
     },
 
     {
@@ -81,5 +92,6 @@ const productos = [
      nombre: "Saca corcho", 
      precio: 350,
      img: "../img/saca.png",
+     cantidad:1,
     },
 ];

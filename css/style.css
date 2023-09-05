@@ -12,9 +12,11 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: wheat;
+    background-color: #eee6ab;
     font-weight: bold;
     font-size: 1.5rem;
+    border-top: 10px #000000 solid;
+    border-bottom: 10px #000000 solid;
 }
 
 nav {
@@ -31,9 +33,15 @@ nav li {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-nav li:hover {
+nav li a:hover {
     opacity: 0.7;
     cursor: pointer;
+}
+
+nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
 }
 
 .logo {
@@ -55,6 +63,29 @@ nav li:hover {
 .ver-carrito:hover {
     opacity: 0.7;
 }
+
+.delete-product {
+    cursor: pointer;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.delete-product:hover{
+    opacity: 0.7;
+}
+
+.cantidad-carrito {
+    background-color: #000000;
+    color: #eee6ab;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 8px;
+    top: 100px;
+    right: 380px;
+    position: absolute;
+    display: none;
+}
+
 /* Finaliza header */
 
 /* Estilos principal */
@@ -74,14 +105,14 @@ nav li:hover {
 }
 
 h1 {
-    color: black;
+    color: #36393b;
     font-size: 4rem;
     padding: 10px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 p {
-    color: black;
+    color: #36393b;
     font-size: 3rem;
     padding: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -89,21 +120,44 @@ p {
 /* Finaliza estilos principal */
 
 
+/* Inicia Quienes somos */
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-somos h1 {
+    font-size: 4rem;
+    color: #36393b;
+}
+
+.quienes-somos p {
+    font-size: 3rem;
+    color: #36393b;
+}
+/* Finaliza Quienes somos */
+
+
 /* Estilos footer */
 footer {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: wheat;
+    background-color: #36393b;
+    color: #eee6ab;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 25px;
+    border-top: 10px #000000 solid;
+    border-bottom: 10px #000000 solid;
 }
 
 footer p {
-    color: wheat;
+    color: #eee6ab;
     font-size: 3rem;
-    padding: 25px;
+    padding: 5px;
 }
 
 .redes {
@@ -112,6 +166,7 @@ footer p {
     list-style: none;
     font-size: 5rem;
     gap: 100px;
+    padding: 25px;
 }
 
 .redes li:hover {
@@ -125,22 +180,22 @@ footer p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: wheat;
+    padding: 25px;
 }
 
 .rectang{
-    box-shadow: 0 4px 8px 0 rgba(0, 2, 2, 0.5);
+    box-shadow: 0 6px 10px 0 rgba(0, 2, 2, 0.5);
     max-width: 300px;
     margin: auto;
     text-align: center;
     margin: 10px;
-    padding: 10px;
-    background-color: black;
-    color: wheat;
+    padding: 25px;
+    background-color: #696758;
+    color: #eee6ab;
 }
 
 .precio {
-    color: wheat;
+    color: #eee6ab;
 }
 
 .rectang > img {
@@ -148,17 +203,17 @@ footer p {
 }
 
 .rectang button {
-    color: wheat;
-    background-color: black;
-    border: 2px solid wheat;
-    padding: 5px;
+    color: #eee6ab;
+    background-color: #36393b;
+    border: 2px solid #eee6ab;
+    padding: 10px;
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 .rectang button:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 /* Finaliza seccion productos */
 
@@ -167,7 +222,7 @@ footer p {
     width: 80%;
     margin: 0% 10%;
     max-width: 160vh;
-    background-color: rgb(40, 40, 40);
+    background-color: #36393b;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -178,24 +233,24 @@ footer p {
 }
 
 .modal-container h1{
-    color: wheat;
+    color: #eee6ab;
 }
 
 .modal-container p {
-    color: wheat;
+    color: #eee6ab;
 }
 
 .modal-header {
     display: flex;
     justify-content: space-around;
     background-color: #000000;
-    color: wheat;
+    color: #eee6ab;
     width: 100%;
 }
 
 .modal-header-titulo {
     justify-self: start;
-    color: wheat;
+    color: #eee6ab;
 }
 
 .modal-header-button {
@@ -214,7 +269,7 @@ footer p {
     width: 70%;
     margin: 10px;
     font-size: 1.5rem;
-    color: wheat;
+    color: #eee6ab;
 }
 
 .modal-container > div > img {
@@ -226,6 +281,99 @@ footer p {
     font-size: 3rem;
     padding: 25px;
     text-align: center;
-    color: wheat;
+    color: #eee6ab;
 }
 /* Finaliza modal de carrito */
+
+
+/* Inicia seccion Contacto */
+.containercontacto {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: #696758;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.containercontacto h1 {
+    color: #eee6ab;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #eee6ab;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #36393b;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: #36393b;
+    color: #eee6ab;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.mensaje-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mensaje-modal-content {
+    background-color: #696758;
+    color: #eee6ab;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.mensaje-modal-content p {
+    color: #eee6ab;
+}
+
+.close-mensaje-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 4rem;
+}
+/* Finaliza seccion Contacto */
