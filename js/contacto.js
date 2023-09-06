@@ -16,21 +16,40 @@ enviarButton.addEventListener('click', function () {
     const mensaje = mensajeInput.value;
 
     if (nombre === '' || apellido === '' || email === '' || mensaje === '') {
-        showModal('Por favor, complete todos los campos.');
+        Swal.fire({
+            position: 'top-center',
+            icon: 'info',
+            title: 'Por favor, complete todos los campos',
+            showConfirmButton: false,
+            timer: 1500
+          })
+ 
     } else {
         const mensajeEnviado = `Mensaje enviado por ${nombre} ${apellido}. Gracias por contactarnos.`;
-        mensajeEnviadoDiv.innerText = mensajeEnviado;
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'El mensaje ha sido enviado satisfactoriamente',
+            showConfirmButton: false,
+            timer: 1500
+          })
 
         nombreInput.value = '';
         apellidoInput.value = '';
         emailInput.value = '';
         mensajeInput.value = '';
-
-        showModal('Mensaje enviado correctamente.');
     }
 });
 
 borrarButton.addEventListener('click', function () {
+    Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'El mensaje ha sido borrado',
+        showConfirmButton: false,
+        timer: 1500
+      })
+
     nombreInput.value = '';
     apellidoInput.value = '';
     emailInput.value = '';

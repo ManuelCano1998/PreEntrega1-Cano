@@ -46,10 +46,26 @@ const pinCarrito = () => {
     totalBuying.innerHTML = `Total a pagar: $${total}`;
     modalContainer.append(totalBuying);
 
+    const finalizarCompraButton = document.createElement("button");
+    finalizarCompraButton.innerText = "Finalizar Compra";
+    finalizarCompraButton.className = "finalizar-compra-button";
+
+    finalizarCompraButton.addEventListener("click", () => {
+        Swal.fire(
+            '¡Compra confirmada!',
+            '¡Has finalizado tu compra con éxito!',
+            'success'
+          );
+        modalContainer.style.display = "none";
+    });
+
+    modalContainer.append(finalizarCompraButton);
+
     window.addEventListener("beforeunload", () => {
         localStorage.removeItem("carrito");
     });
 }
+
 
 verCarrito.addEventListener("click", pinCarrito);
 
@@ -60,6 +76,13 @@ const deleteProduct = () => {
         return carritoId !== foundId;
     });
     carritoCont ();
+    Swal.fire({
+        position: 'top-center',
+        icon: 'warning',
+        title: 'Producto eliminado',
+        showConfirmButton: false,
+        timer: 1500
+    });
     pinCarrito ();
 };
 
