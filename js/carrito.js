@@ -32,7 +32,7 @@ const pinCarrito = () => {
       modalContainer.append(carritoContent);
 
       let eliminar = document.createElement("span");
-      eliminar.innerText = "X";
+      eliminar.innerText = "🗑";
       eliminar.className = "delete-product";
       carritoContent.append(eliminar);
 
@@ -61,6 +61,8 @@ const pinCarrito = () => {
 
     modalContainer.append(finalizarCompraButton);
 
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
     window.addEventListener("beforeunload", () => {
         localStorage.removeItem("carrito");
     });
@@ -81,7 +83,7 @@ const deleteProduct = () => {
         icon: 'warning',
         title: 'Producto eliminado',
         showConfirmButton: false,
-        timer: 1500
+        timer: 1000
     });
     pinCarrito ();
 };
