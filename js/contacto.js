@@ -1,8 +1,13 @@
     const nombreInput = document.getElementById('nombre');
+
     const apellidoInput = document.getElementById('apellido');
+
     const emailInput = document.getElementById('email');
+
     const mensajeInput = document.getElementById('mensaje');
+
     const enviarButton = document.getElementById('enviar');
+    
     const borrarButton = document.getElementById('borrar');
 
     const guardarDatosEnLocalStorage = () => {

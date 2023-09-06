@@ -95,3 +95,8 @@ const productos = [
      cantidad:1,
     },
 ];
+
+localStorage.setItem("productos", JSON.stringify(productos));
+
+const productosGuardados = JSON.parse(localStorage.getItem("productos"));
+
