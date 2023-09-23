@@ -1,0 +1,26 @@
+[
+    {"id": 1, "nombre": "Tazones", "precio": 550, "img": "../img/tazones.png"},
+    
+    {"id": 2, "nombre": "Espumador", "precio": 450, "img": "../img/espumador.png"},
+
+    {"id": 3, "nombre": "Esponja", "precio": 180, "img": "../img/esponja.png"},
+
+    {"id": 4, "nombre": "Bombillas", "precio": 250, "img": "../img/bombillas.png"},
+
+    {"id": 5, "nombre": "Aceitero", "precio": 480, "img": "../img/aceitero.png"},
+
+    {"id": 6, "nombre": "Espumaderas", "precio": 370, "img": "../img/espumaderas.png"},
+
+    {"id": 7, "nombre": "Set", "precio": 100, "img": "../img/set.png"},
+
+    {"id": 8, "nombre": "Pimientero", "precio": 550, "img": "../img/pimientero.png"},
+
+    {"id": 9, "nombre": "Fuente", "precio": 1150, "img": "../img/fuente.png"},
+
+    {"id": 10, "nombre": "Sarten", "precio": 2250, "img": "../img/sarten.png"},
+
+    {"id": 11, "nombre": "Cuchara", "precio": 120, "img": "../img/cuchara.png"},
+
+    {"id": 12, "nombre": "Frascos", "precio": 400, "img": "../img/frascos.png"}
+
+]
